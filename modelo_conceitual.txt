@@ -1,0 +1,39 @@
+Modelo Shell Script Pseudocódigo
+
+while (true){
+    abrir o arquivo 'pid'
+    ler o conteudo do arquivo até a ultima quebra de linha e passar o conteudo para a variavel pid
+
+    if (pid está rodando){
+        escreva("1: It is alive")
+    }
+    else {
+        escreva ("1: It is dead")
+        call python.py
+    }
+}
+
+Modelo python3 Pseudocódigo
+
+abrir o arquivo 'pid'
+pegar o pid do deste processo
+escrever o pid no arquivo
+
+for(i=0;i<3;i++){
+    escreva("2: I am alive")
+    sleep(x)
+}
+
+escreva("2: I gonna die now, bye")
+
+-----------------------------------------------------------
+
+Descreva quais são as diferenças entre o modelo conceitual descrito por você e o que foi
+implementado:
+
+No geral meu modelo conceitual seguiu muito próximo do que foi implementado como pode ser visto fazendo uma comparação.
+Acho que a única coisa que notei diferença, talvez não muito relevante, foi no código python, uma pequena mudança na ordem das primeiras instruções: 
+no arquivo pyhton real eu primeiro peguei o pid do processo e depois eu abri o arquivo e escrevi, 
+enquanto no pseudocodigo eu escrevi que abriria o arquivo, pegaria o pid do processo e depois escreveria no arquivo.
+
+
