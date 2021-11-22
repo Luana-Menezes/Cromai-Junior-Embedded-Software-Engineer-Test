@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$1" == "" ] ; then
+    echo "Usage: ./`basename $0` [FILENAME]"
+    exit 0
+fi
+
 while true; do
     filename=$1
     while read -r line; do
@@ -11,6 +16,6 @@ while true; do
         echo "1: It is alive"
     else
         echo "1: It is dead"
-        python3 python3.py $1
+        python3 process.py $1
     fi
 done

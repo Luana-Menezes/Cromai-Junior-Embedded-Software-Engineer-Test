@@ -7,10 +7,10 @@
 
 2. Conceda as permissoes mínimas necessárias para a execução do shell script
    ```sh
-   chmod +x script.sh
+   chmod +x check_process.sh
    ```
 
 3. Execute o shell script passando o arquivo de texto do pid
    ```sh
-   ./script.sh pid.txt
+   ./check_process.sh pid.txt
    ```
